@@ -1,4 +1,4 @@
-# Задание 1
+<img width="1084" height="803" alt="image" src="https://github.com/user-attachments/assets/2f6a18a9-0510-4538-bfc7-6ef93c1799cc" /># Задание 1
 
 Бизнес-модель: B2B
 
@@ -11,6 +11,8 @@
 **Решение:** Competence Office — сервис точечного решения проблемы недостатка профессиональных навыков. Мы погружаемся в рабочие процессы отдела клиента, изучаем их файлы и задачи, и предоставляем только те знания, которые необходимы конкретному отделу. 
 
 ## Lean Canvas
-![Uploading image.png…]()
+<img width="1222" height="893" alt="image" src="https://github.com/user-attachments/assets/11e36341-bd93-401d-9e7f-31fe53c06154" />
+
+
 
 
