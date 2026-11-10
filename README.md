@@ -1,5 +1,3 @@
-# Задание 1
-
 Бизнес-модель: B2B
 
 ## Elevator Pitch: Competence Office
@@ -72,5 +70,107 @@ LTV/CAC = 600.000 / 187.500 = 3,2
 Мы экономим 40 000 руб. в месяц на комиссии партнерам и тратим их на создание контента.
 
 Затраты на привлечение (CAC) остаются примерно на том же уровне, но мы больше не зависим от партнеров и забираем себе 100% прибыли с продаж.
+
+# Задание 3
+
+### User Stories и приоритеты MoSCoW
+
+M - Must Have: обязательно для выбранного пилота.
+
+S - Should Have: важно, но временно можно обойтись более простым решением.
+
+C - Could Have: желательно при наличии ресурсов.
+
+W - Won’t Have this time: откладываем за пределы первого выпуска.
+
+<img width="1221" height="537" alt="image" src="https://github.com/user-attachments/assets/399c1de0-4c6d-405f-9115-18a14e59f36a" />
+
+### MVP и MLP
+
+<img width="1277" height="655" alt="image" src="https://github.com/user-attachments/assets/94f3862a-57c4-449b-9cfc-b384ad32d869" />
+
+# Задание 4
+
+### DDD
+
+<img width="847" height="683" alt="image" src="https://github.com/user-attachments/assets/941bf11c-12ce-44d2-b614-61a79d67c7a5" />
+
+### BDD
+
+<img width="743" height="545" alt="image" src="https://github.com/user-attachments/assets/c5ae4df8-d8a6-4e8a-a5c0-c27cc6ced019" />
+
+### Wireframes
+
+<img width="1720" height="718" alt="image" src="https://github.com/user-attachments/assets/d17644c2-b849-4634-9d28-9a9f7274062b" />
+
+### API-ручка1: Отправка домашнего задания
+
+Ручка, которая вызывается, когда стуендт нажимает кнопку "Загрузить" .xls файл под задачей ВПР
+
+POST /api/v1/tasks/{task_id}/submit
+
+### Request
+
+{
+
+  "student_id": "123e4567-e89b-12d3-a456-426614174000",
+  
+  "file_url": "https://storage.com/files/petrov_vpr.xlsx",
+  
+  "comment": "Сделал задачу, прикладываю файл"
+  
+}
+#### Response
+
+{
+
+  "status": "success",
+  
+  "message": "Домашнее задание успешно загружено и отправлено на проверку",
+  
+  "task_status": "on_review"
+  
+}
+
+### API-ручка2: Получение отчета по всему отделу
+
+Вызывается, когда директор нажимает кнопку ".xls файл по результатам каждого сотрудника"
+
+### Response (сервер возвращает .xls файл. Запроса нет)
+
+{
+
+  "status": "success",
+  
+  "department_name": "Отдел Закупок",
+  
+  "total_employees": 20,
+  
+  "completed_employees": 18,
+  
+  "skills_learned": ["ВПР", "Сводные таблицы", "Макросы"],
+  
+  "report_files": {
+  
+    "summary_pdf_url": "https://storage.com/reports/dept_zakupki_summary.pdf",
+    
+    "full_excel_url": "https://storage.com/reports/dept_zakupki_all_employees.xlsx",
+    
+    "time_graph_svg_url": "https://storage.com/reports/dept_zakupki_graph.svg"
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
